@@ -14,8 +14,15 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@styles/*": ["./src/styles/*"],
+    }
   },
   "include": ["src"],
+  "files": [
+    "./node_modules/redux-persist/types/integration/react.d.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
